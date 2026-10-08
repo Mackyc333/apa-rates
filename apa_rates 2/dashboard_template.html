@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>アパホテル料金ダッシュボード</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+:root{
+  color-scheme:light;
+  --bg:#f6f6f4; --surface:#fcfcfb; --border:#e3e2de; --grid:#ecebe7;
+  --text:#0b0b0b; --text2:#52514e; --muted:#8a8984;
+  --s1:#2a78d6; --s2:#eb6834; --s3:#1baf7a; --s4:#eda100; --s5:#e87ba4; --s6:#008300; --s7:#4a3aa7; --s8:#e34948;
+  --seq0:#f0efec; --seq1:#cde2fb; --seq2:#9ec5f4; --seq3:#6da7ec; --seq4:#3987e5; --seq5:#256abf; --seq6:#184f95; --seq7:#0d366b;
+  --chip-on:#0b0b0b; --chip-on-text:#fff;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#121211; --surface:#1a1a19; --border:#2e2e2b; --grid:#2a2a27;
+    --text:#fff; --text2:#c3c2b7; --muted:#8f8e86;
+    --s1:#3987e5; --s2:#d95926; --s3:#199e70; --s4:#c98500; --s5:#d55181; --s6:#008300; --s7:#9085e9; --s8:#e66767;
+    --seq0:#383835; --seq1:#0d366b; --seq2:#104281; --seq3:#184f95; --seq4:#1c5cab; --seq5:#2a78d6; --seq6:#5598e7; --seq7:#9ec5f4;
+    --chip-on:#fff; --chip-on-text:#0b0b0b;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#121211; --surface:#1a1a19; --border:#2e2e2b; --grid:#2a2a27;
+  --text:#fff; --text2:#c3c2b7; --muted:#8f8e86;
+  --s1:#3987e5; --s2:#d95926; --s3:#199e70; --s4:#c98500; --s5:#d55181; --s6:#008300; --s7:#9085e9; --s8:#e66767;
+  --seq0:#383835; --seq1:#0d366b; --seq2:#104281; --seq3:#184f95; --seq4:#1c5cab; --seq5:#2a78d6; --seq6:#5598e7; --seq7:#9ec5f4;
+  --chip-on:#fff; --chip-on-text:#0b0b0b;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:14px/1.6 "Hiragino Sans","Noto Sans JP","Yu Gothic UI",system-ui,sans-serif}
+.wrap{max-width:1200px;margin:0 auto;padding:24px 16px 64px}
+header h1{font-size:22px;margin:0 0 4px;letter-spacing:.02em}
+header p{margin:0;color:var(--text2);font-size:13px}
+.filters{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;margin:20px 0 16px;padding:12px 14px;background:var(--surface);border:1px solid var(--border);border-radius:10px}
+.filters label{font-size:12px;color:var(--text2);margin-right:6px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{border:1px solid var(--border);background:transparent;color:var(--text);border-radius:999px;padding:3px 10px 3px 8px;font:inherit;font-size:13px;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
+.chip .dot{width:9px;height:9px;border-radius:50%;background:var(--muted)}
+.chip[aria-pressed="true"]{background:var(--chip-on);color:var(--chip-on-text);border-color:var(--chip-on)}
+select{font:inherit;font-size:13px;padding:3px 6px;border:1px solid var(--border);border-radius:6px;background:var(--surface);color:var(--text)}
+.kpis{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px;margin-bottom:16px}
+.kpi{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:14px 16px}
+.kpi .area{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--text2)}
+.kpi .area .dot{width:9px;height:9px;border-radius:50%}
+.kpi .big{font-size:28px;font-weight:600;font-variant-numeric:tabular-nums;margin:2px 0}
+.kpi .sub{font-size:12px;color:var(--text2);font-variant-numeric:tabular-nums}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:16px;margin-bottom:16px}
+.card h2{font-size:15px;margin:0 0 2px}
+.card .desc{font-size:12px;color:var(--text2);margin:0 0 12px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:820px){.grid2{grid-template-columns:1fr}}
+.chartbox{position:relative;height:300px}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:12px;color:var(--text2);margin-bottom:8px}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend i{width:14px;height:3px;border-radius:2px;display:inline-block}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;font-size:12.5px;font-variant-numeric:tabular-nums}
+th,td{padding:5px 8px;border-bottom:1px solid var(--grid);text-align:right;white-space:nowrap}
+th{font-weight:600;color:var(--text2);position:sticky;top:0;background:var(--surface);cursor:pointer;user-select:none}
+th:first-child,td:first-child{text-align:left}
+td.name{max-width:260px;overflow:hidden;text-overflow:ellipsis}
+.heat td{padding:0;border:2px solid var(--surface);min-width:34px;height:26px;text-align:center;font-size:10.5px}
+.heat td.name{padding:0 8px;text-align:left;font-size:12px}
+.heat th{font-size:10.5px;padding:2px;text-align:center;cursor:default}
+.heat th.we{color:var(--s8)}
+.scale{display:flex;align-items:center;gap:4px;font-size:11px;color:var(--text2);margin:8px 0 0}
+.scale b{display:inline-block;width:22px;height:10px;border-radius:2px}
+.pos{color:var(--s8)} .neg{color:var(--s1)}
+.empty{padding:24px;text-align:center;color:var(--text2)}
+.tip{position:fixed;pointer-events:none;background:var(--surface);color:var(--text);border:1px solid var(--border);border-radius:6px;padding:6px 8px;font-size:12px;box-shadow:0 4px 14px rgba(0,0,0,.12);display:none;z-index:9}
+footer{font-size:11.5px;color:var(--muted);margin-top:24px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>アパホテル料金ダッシュボード</h1>
+    <p id="meta"></p>
+  </header>
+
+  <div class="filters">
+    <div><label>エリア</label><span class="chips" id="areaChips"></span></div>
+    <div><label for="snap">取得時点</label><select id="snap"></select></div>
+  </div>
+
+  <div class="kpis" id="kpis"></div>
+
+  <div class="card">
+    <h2>宿泊日ごとの最安値（エリア中央値）</h2>
+    <p class="desc">各ホテルの「その日の1室1泊の最安値」をエリア内で中央値にしたもの。薄い帯は25〜75%の範囲。</p>
+    <div class="legend" id="lgLine"></div>
+    <div class="chartbox"><canvas id="cLine"></canvas></div>
+  </div>
+
+  <div class="grid2">
+    <div class="card">
+      <h2>曜日別の料金水準</h2>
+      <p class="desc">宿泊日の曜日ごとの中央値。週末プレミアムの比較に。</p>
+      <div class="legend" id="lgDow"></div>
+      <div class="chartbox"><canvas id="cDow"></canvas></div>
+    </div>
+    <div class="card">
+      <h2>料金の推移（ブッキングカーブ）</h2>
+      <p class="desc" id="curveDesc">同じ宿泊日の料金が、取得を重ねるごとにどう動いたか。</p>
+      <div style="margin-bottom:8px"><label style="font-size:12px;color:var(--text2)">宿泊日 </label><select id="curveDate"></select></div>
+      <div class="legend" id="lgCurve"></div>
+      <div class="chartbox"><canvas id="cCurve"></canvas></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>ホテル × 宿泊日の料金ヒートマップ</h2>
+    <p class="desc">色が濃いほど高い。グレーは空室なし（楽天で予約可能なプランなし）。</p>
+    <div style="margin-bottom:8px"><label style="font-size:12px;color:var(--text2)">エリア </label><select id="heatArea"></select></div>
+    <div class="scroll" id="heat"></div>
+    <div class="scale" id="heatScale"></div>
+  </div>
+
+  <div class="card">
+    <h2>ホテル別サマリー</h2>
+    <p class="desc">表示中のエリアのホテル。「エリア比」は同エリア中央値との差。列見出しで並び替え。</p>
+    <div class="scroll" style="max-height:520px;overflow-y:auto"><table id="tbl"></table></div>
+  </div>
+
+  <footer>データ出典: 楽天トラベル（楽天ウェブサービス）。料金は楽天トラベル経由の1室1泊・税サ込の最安値で、公式サイトの価格と異なる場合があります。<span id="gen"></span></footer>
+</div>
+<div class="tip" id="tip"></div>
+
+<script>
+const DATA = /*__DATA__*/null;
+const SLOTS = ['--s1','--s2','--s3','--s4','--s5','--s6','--s7','--s8'];
+const PREFERRED = ['福岡市','東京23区'];
+const DOW = ['日','月','火','水','木','金','土'];
+const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const yen = v => v == null ? '–' : '¥' + Math.round(v).toLocaleString('ja-JP');
+const q = (arr, p) => { if (!arr.length) return null; const s=[...arr].sort((a,b)=>a-b); const i=(s.length-1)*p, lo=Math.floor(i), hi=Math.ceil(i); return s[lo]+(s[hi]-s[lo])*(i-lo); };
+const med = a => q(a, .5);
+const dowOf = d => new Date(d + 'T00:00:00').getDay();
+const md = d => { const [, m, dd] = d.split('-'); return `${+m}/${+dd}`; };
+
+const state = { areas: new Set(), snap: null };
+let charts = {};
+
+function init(){
+  if (!DATA || !DATA.rows.length){ document.querySelector('.wrap').insertAdjacentHTML('beforeend','<div class="empty">データがありません。apa_rates.py fetch を実行してください。</div>'); return; }
+  const H = DATA.hotels;
+  // エリアごとの軒数（データがあるホテルのみ）
+  const cnt = {};
+  const seen = new Set();
+  for (const r of DATA.rows){ if (seen.has(r[2])) continue; seen.add(r[2]); const a = H[r[2]]?.area || '不明'; cnt[a]=(cnt[a]||0)+1; }
+  const areas = Object.keys(cnt).sort((a,b)=>{
+    const pa=PREFERRED.indexOf(a), pb=PREFERRED.indexOf(b);
+    if (pa!==-1||pb!==-1) return (pa===-1?99:pa)-(pb===-1?99:pb);
+    return cnt[b]-cnt[a];
+  });
+  // 色はエリア固定（並び順で決め、フィルターで塗り直さない）
+  state.color = {}; areas.forEach((a,i)=> state.color[a] = SLOTS[i] || null);
+  state.allAreas = areas;
+  areas.slice(0, Math.min(2, areas.length)).forEach(a=>state.areas.add(a));
+
+  const chips = document.getElementById('areaChips');
+  areas.forEach(a=>{
+    const b = document.createElement('button');
+    b.className='chip'; b.type='button';
+    b.innerHTML = `<span class="dot"></span>${a}<span style="opacity:.6">${cnt[a]}</span>`;
+    b.querySelector('.dot').style.background = state.color[a] ? css(state.color[a]) : 'var(--muted)';
+    b.setAttribute('aria-pressed', state.areas.has(a));
+    b.onclick = () => {
+      if (state.areas.has(a)) { if (state.areas.size>1) state.areas.delete(a); }
+      else { if (!state.color[a]) { alert('同時に表示できるのは8エリアまでです'); return; } state.areas.add(a); }
+      b.setAttribute('aria-pressed', state.areas.has(a)); render();
+    };
+    chips.appendChild(b);
+  });
+
+  const snaps = [...new Set(DATA.rows.map(r=>r[0]))].sort().reverse();
+  state.snaps = snaps;
+  const sel = document.getElementById('snap');
+  snaps.forEach((s,i)=> sel.insertAdjacentHTML('beforeend', `<option value="${s}">${s.replace('T',' ')}${i===0?'（最新）':''}</option>`));
+  state.snap = snaps[0];
+  sel.onchange = () => { state.snap = sel.value; render(); };
+
+  const ha = document.getElementById('heatArea');
+  ha.onchange = () => renderHeat();
+  document.getElementById('curveDate').onchange = () => renderCurve();
+
+  const nHotels = seen.size;
+  document.getElementById('meta').textContent = `${nHotels}軒・これまで${DATA.snapshotsTotal || snaps.length}回取得（最新 ${snaps[0].replace('T',' ')}・毎朝自動更新）`;
+  document.getElementById('gen').textContent = ` 生成: ${DATA.generated.replace('T',' ')}`;
+  if (window.matchMedia) matchMedia('(prefers-color-scheme: dark)').addEventListener('change', render);
+  render();
+}
+
+// 選択中の取得時点の行（area 付き）
+function snapRows(){
+  const H = DATA.hotels;
+  return DATA.rows.filter(r=>r[0]===state.snap).map(r=>({date:r[1], no:r[2], price:r[3], area:H[r[2]]?.area||'不明'}));
+}
+function selAreas(){ return state.allAreas.filter(a=>state.areas.has(a)); }
+
+function render(){
+  const rows = snapRows();
+  renderKpis(rows); renderLine(rows); renderDow(rows); renderCurve();
+  const ha = document.getElementById('heatArea'); const cur = ha.value;
+  ha.innerHTML = selAreas().map(a=>`<option>${a}</option>`).join('');
+  if (selAreas().includes(cur)) ha.value = cur;
+  renderHeat(); renderTable(rows);
+}
+
+function legend(el, items){
+  document.getElementById(el).innerHTML = items.map(([n,c])=>`<span><i style="background:${c}"></i>${n}</span>`).join('');
+}
+
+function renderKpis(rows){
+  const dates = [...new Set(rows.map(r=>r.date))].sort();
+  const d7 = new Set(dates.slice(0,7)), d30 = new Set(dates.slice(0,30));
+  const el = document.getElementById('kpis'); el.innerHTML='';
+  const base = selAreas()[0];
+  const m30 = {};
+  for (const a of selAreas()){
+    const ar = rows.filter(r=>r.area===a);
+    const p7 = ar.filter(r=>d7.has(r.date)&&r.price!=null).map(r=>r.price);
+    const p30 = ar.filter(r=>d30.has(r.date)&&r.price!=null).map(r=>r.price);
+    m30[a] = med(p30);
+    const so = ar.length ? ar.filter(r=>r.price==null).length/ar.length : 0;
+    let diff = '';
+    if (a!==base && m30[base] && m30[a]){ const p=(m30[a]/m30[base]-1)*100; diff = `・${base}比 ${p>=0?'+':''}${p.toFixed(0)}%`; }
+    el.insertAdjacentHTML('beforeend', `<div class="kpi"><div class="area"><span class="dot" style="background:${css(state.color[a])}"></span>${a}</div>
+      <div class="big">${yen(m30[a])}</div>
+      <div class="sub">今後${Math.min(30,dates.length)}日の中央値${diff}</div>
+      <div class="sub">直近7日 ${yen(med(p7))}・空室なし ${(so*100).toFixed(0)}%</div></div>`);
+  }
+}
+
+function baseOpts(extra={}){
+  const grid = css('--grid'), t2 = css('--text2');
+  return Object.assign({
+    responsive:true, maintainAspectRatio:false, animation:false,
+    interaction:{mode:'index', intersect:false},
+    plugins:{legend:{display:false}, tooltip:{
+      backgroundColor:css('--surface'), titleColor:css('--text'), bodyColor:css('--text'), borderColor:css('--border'), borderWidth:1,
+      padding:8, boxPadding:4, usePointStyle:true,
+      filter: i => !i.dataset._band,
+      callbacks:{label: c => ` ${c.dataset.label}: ${yen(c.parsed.y)}`}}},
+    scales:{
+      x:{grid:{display:false}, ticks:{color:t2, maxRotation:0, autoSkip:true, autoSkipPadding:12, font:{size:11}}, border:{color:grid}},
+      y:{grid:{color:grid}, border:{display:false}, ticks:{color:t2, font:{size:11}, callback:v=>'¥'+(v/1000).toFixed(0)+'k'}}
+    }
+  }, extra);
+}
+function mk(id, cfg){ if (charts[id]) charts[id].destroy(); charts[id] = new Chart(document.getElementById(id), cfg); }
+function alpha(hex, a){ const n=parseInt(hex.slice(1),16); return `rgba(${n>>16},${(n>>8)&255},${n&255},${a})`; }
+
+function renderLine(rows){
+  const dates = [...new Set(rows.map(r=>r.date))].sort();
+  const ds = [];
+  for (const a of selAreas()){
+    const c = css(state.color[a]);
+    const by = d => rows.filter(r=>r.area===a&&r.date===d&&r.price!=null).map(r=>r.price);
+    const lo = dates.map(d=>q(by(d),.25)), hi = dates.map(d=>q(by(d),.75)), m = dates.map(d=>med(by(d)));
+    ds.push({label:a+' 25%', data:lo, borderWidth:0, pointRadius:0, fill:false, _band:true});
+    ds.push({label:a+' 75%', data:hi, borderWidth:0, pointRadius:0, backgroundColor:alpha(c,.12), fill:'-1', _band:true});
+    ds.push({label:a, data:m, borderColor:c, backgroundColor:c, borderWidth:2, pointRadius:0, pointHoverRadius:4, tension:.25, spanGaps:true});
+  }
+  legend('lgLine', selAreas().map(a=>[a, css(state.color[a])]));
+  mk('cLine', {type:'line', data:{labels:dates.map(d=>`${md(d)}(${DOW[dowOf(d)]})`), datasets:ds}, options:baseOpts()});
+}
+
+function renderDow(rows){
+  const ds = selAreas().map(a=>{
+    const c = css(state.color[a]);
+    return {label:a, data:DOW.map((_,i)=>med(rows.filter(r=>r.area===a&&r.price!=null&&dowOf(r.date)===i).map(r=>r.price))),
+      backgroundColor:c, borderRadius:{topLeft:4,topRight:4}, borderSkipped:'bottom', borderColor:css('--surface'), borderWidth:{left:1,right:1}, maxBarThickness:28};
+  });
+  legend('lgDow', selAreas().map(a=>[a, css(state.color[a])]));
+  const o = baseOpts(); o.interaction={mode:'index', intersect:false}; o.scales.y.beginAtZero = true;
+  mk('cDow', {type:'bar', data:{labels:DOW.map(d=>d+'曜'), datasets:ds}, options:o});
+}
+
+function renderCurve(){
+  const sel = document.getElementById('curveDate');
+  const C = DATA.curve || [];
+  const today = new Date(Date.now() + 9*3600e3).toISOString().slice(0,10);
+  // 2回以上取得されている宿泊日（今日以降を優先、なければ過去も）
+  const cnt = {};
+  for (const r of C){ (cnt[r[1]] ||= new Set()).add(r[0]); }
+  let dates = Object.keys(cnt).filter(d=>cnt[d].size>1).sort();
+  const future = dates.filter(d=>d>=today);
+  const desc = document.getElementById('curveDesc');
+  if (!dates.length){
+    sel.innerHTML='<option>—</option>'; sel.disabled = true;
+    desc.textContent = '取得を2回以上行うと、同じ宿泊日の料金が日を追ってどう変わったかが表示されます（毎日の自動取得で育っていきます）。';
+    if (charts.cCurve){ charts.cCurve.destroy(); delete charts.cCurve; }
+    document.getElementById('lgCurve').innerHTML=''; return;
+  }
+  sel.disabled = false;
+  desc.textContent = '同じ宿泊日の料金（エリア中央値）が、取得を重ねるごとにどう動いたか。';
+  const cur = sel.value;
+  sel.innerHTML = dates.map(d=>`<option value="${d}">${md(d)}(${DOW[dowOf(d)]})${d<today?'・宿泊済':''}</option>`).join('');
+  sel.value = dates.includes(cur) ? cur : (future[0] || dates[dates.length-1]);
+  const d = sel.value;
+  const snaps = [...cnt[d]].sort();
+  const ds = selAreas().map(a=>{
+    const c = css(state.color[a]);
+    const m = {}; C.forEach(r=>{ if (r[1]===d && r[2]===a) m[r[0]] = r[3]; });
+    return {label:a, data:snaps.map(s=>m[s] ?? null), borderColor:c, backgroundColor:c, borderWidth:2, pointRadius:3, spanGaps:true};
+  });
+  legend('lgCurve', selAreas().map(a=>[a, css(state.color[a])]));
+  mk('cCurve', {type:'line', data:{labels:snaps.map(s=>s.slice(5,16).replace('T',' ')), datasets:ds}, options:baseOpts()});
+}
+
+function renderHeat(){
+  const a = document.getElementById('heatArea').value;
+  const H = DATA.hotels;
+  const rows = snapRows().filter(r=>r.area===a);
+  const dates = [...new Set(rows.map(r=>r.date))].sort();
+  const hotels = [...new Set(rows.map(r=>r.no))];
+  const map = {}; rows.forEach(r=> map[r.no+'|'+r.date] = r.price);
+  const prices = rows.filter(r=>r.price!=null).map(r=>r.price);
+  const steps = ['--seq1','--seq2','--seq3','--seq4','--seq5','--seq6','--seq7'].map(css);
+  const bounds = [1,2,3,4,5,6].map(i=>q(prices, i/7));
+  const colorOf = p => { let i=0; while(i<bounds.length && p>bounds[i]) i++; return steps[i]; };
+  const inkOf = p => { let i=0; while(i<bounds.length && p>bounds[i]) i++; const dark = document.documentElement.matches(':root[data-theme="dark"]') || (matchMedia('(prefers-color-scheme: dark)').matches && !document.documentElement.matches('[data-theme="light"]')); return (dark ? i<=3 : i>=4) ? '#fff' : css('--text'); };
+  const avg = no => med(dates.map(d=>map[no+'|'+d]).filter(v=>v!=null)) ?? 1e9;
+  hotels.sort((x,y)=>avg(x)-avg(y));
+  let html = '<table class="heat"><thead><tr><th style="text-align:left">ホテル</th>' +
+    dates.map(d=>`<th class="${[0,6].includes(dowOf(d))?'we':''}">${md(d)}<br>${DOW[dowOf(d)]}</th>`).join('') + '</tr></thead><tbody>';
+  for (const no of hotels){
+    const name = (H[no]?.name||no).replace(/^アパホテル/,'');
+    html += `<tr><td class="name" title="${H[no]?.name||''}">${name}</td>`;
+    for (const d of dates){
+      const p = map[no+'|'+d];
+      if (p==null) html += `<td style="background:var(--seq0)" data-t="${H[no]?.name}｜${d}｜空室なし"></td>`;
+      else html += `<td style="background:${colorOf(p)};color:${inkOf(p)}" data-t="${H[no]?.name}｜${d}｜${yen(p)}">${(p/1000).toFixed(p<10000?1:0)}</td>`;
+    }
+    html += '</tr>';
+  }
+  html += '</tbody></table>';
+  document.getElementById('heat').innerHTML = hotels.length ? html : '<div class="empty">このエリアのデータがありません</div>';
+  const sc = document.getElementById('heatScale');
+  sc.innerHTML = prices.length ? `<span>${yen(q(prices,0))}</span>${steps.map(c=>`<b style="background:${c}"></b>`).join('')}<span>${yen(q(prices,1))}</span><span style="margin-left:12px">セル内の数字は千円</span>` : '';
+}
+
+let sortKey = 'med', sortDir = 1;
+function renderTable(rows){
+  const H = DATA.hotels;
+  const areaMed = {};
+  for (const a of selAreas()) areaMed[a] = med(rows.filter(r=>r.area===a&&r.price!=null).map(r=>r.price));
+  const by = {};
+  rows.filter(r=>state.areas.has(r.area)).forEach(r=>{ (by[r.no] ||= {no:r.no, area:r.area, p:[], n:0}).n++; if (r.price!=null) by[r.no].p.push(r.price); });
+  const list = Object.values(by).map(o=>({
+    no:o.no, name:H[o.no]?.name||String(o.no), area:o.area, review:H[o.no]?.review ?? null, url:H[o.no]?.url,
+    med:med(o.p), min:o.p.length?Math.min(...o.p):null, max:o.p.length?Math.max(...o.p):null,
+    rel: (med(o.p)!=null && areaMed[o.area]) ? (med(o.p)/areaMed[o.area]-1)*100 : null,
+    so: o.n ? (o.n-o.p.length)/o.n*100 : 0
+  }));
+  const cols = [['name','ホテル'],['area','エリア'],['med','中央値'],['min','最安'],['max','最高'],['rel','エリア比'],['so','空室なし率'],['review','評価']];
+  list.sort((a,b)=>{ const x=a[sortKey], y=b[sortKey]; if (x==null) return 1; if (y==null) return -1; return (typeof x==='string'? x.localeCompare(y,'ja') : x-y)*sortDir; });
+  const t = document.getElementById('tbl');
+  t.innerHTML = '<thead><tr>' + cols.map(([k,l])=>`<th data-k="${k}">${l}${sortKey===k?(sortDir>0?' ▲':' ▼'):''}</th>`).join('') + '</tr></thead><tbody>' +
+    list.map(r=>`<tr><td class="name" title="${r.name}">${r.url?`<a href="${r.url}" target="_blank" rel="noopener" style="color:inherit">${r.name}</a>`:r.name}</td><td>${r.area}</td><td>${yen(r.med)}</td><td>${yen(r.min)}</td><td>${yen(r.max)}</td>
+      <td class="${r.rel>0?'pos':r.rel<0?'neg':''}">${r.rel==null?'–':(r.rel>0?'+':'')+r.rel.toFixed(0)+'%'}</td><td>${r.so.toFixed(0)}%</td><td>${r.review??'–'}</td></tr>`).join('') + '</tbody>';
+  t.querySelectorAll('th').forEach(th=> th.onclick = () => { const k=th.dataset.k; if (sortKey===k) sortDir*=-1; else { sortKey=k; sortDir = ['name','area'].includes(k)?1:1; } renderTable(snapRows()); });
+}
+
+// ヒートマップのツールチップ
+const tip = document.getElementById('tip');
+document.addEventListener('mousemove', e=>{
+  const td = e.target.closest && e.target.closest('td[data-t]');
+  if (!td){ tip.style.display='none'; return; }
+  tip.textContent = td.dataset.t.replace(/｜/g,'  ');
+  tip.style.display='block';
+  const x = Math.min(e.clientX+12, innerWidth - tip.offsetWidth - 8);
+  tip.style.left = x+'px'; tip.style.top = (e.clientY+14)+'px';
+});
+
+if (window.Chart) init(); else document.querySelector('.wrap').insertAdjacentHTML('beforeend','<div class="empty">グラフ用ライブラリを読み込めませんでした。インターネット接続を確認してください。</div>');
+</script>
+</body>
+</html>
