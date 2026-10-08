@@ -1,7 +1,7 @@
 {
   "_note": "アプリIDとアクセスキーはここに書かず、GitHub の Secrets（RAKUTEN_APP_ID / RAKUTEN_ACCESS_KEY）に登録してください",
   "keyword": "アパホテル",
-  "fetch_scope": ["福岡市", "東京23区"],
+   "fetch_scope": ["福岡市", "東京23区", "大阪市", "札幌市", "名古屋市"],
   "days_ahead": 45,
   "start_offset_days": 0,
   "adults": 1,
