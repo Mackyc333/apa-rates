@@ -18,6 +18,9 @@ jobs:
   fetch:
     runs-on: ubuntu-latest
     timeout-minutes: 120
+    defaults:
+      run:
+        working-directory: "apa_rates 2"
     environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
@@ -47,7 +50,7 @@ jobs:
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: site
+          path: "apa_rates 2/site"
 
       - id: deploy
         uses: actions/deploy-pages@v4
