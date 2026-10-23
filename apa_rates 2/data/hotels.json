@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16T07:40:21",
+ "updated": "2026-10-24T07:39:46",
  "hotels": [
   {
    "hotelNo": 27859,
@@ -20,7 +20,7 @@
    "area": "三重県",
    "lat": 34.869141,
    "lng": 136.53428,
-   "review": 4.11,
+   "review": 4.1,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=7614"
   },
   {
@@ -31,7 +31,7 @@
    "area": "京都市",
    "lat": 34.996803,
    "lng": 135.74954,
-   "review": 4.28,
+   "review": 4.26,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=192160"
   },
   {
@@ -75,7 +75,7 @@
    "area": "京都市",
    "lat": 34.987954,
    "lng": 135.76095,
-   "review": 3.93,
+   "review": 3.92,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=29357"
   },
   {
@@ -86,7 +86,7 @@
    "area": "京都市",
    "lat": 34.988229,
    "lng": 135.75634,
-   "review": 3.97,
+   "review": 3.95,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=162951"
   },
   {
@@ -119,7 +119,7 @@
    "area": "京都府",
    "lat": 35.440465,
    "lng": 135.32876,
-   "review": 3.7,
+   "review": 3.71,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=11109"
   },
   {
@@ -130,7 +130,7 @@
    "area": "佐賀県",
    "lat": 33.266901,
    "lng": 130.29715,
-   "review": 4.1,
+   "review": 4.09,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=104654"
   },
   {
@@ -185,7 +185,7 @@
    "area": "北海道",
    "lat": 43.798889,
    "lng": 143.88434,
-   "review": 3.96,
+   "review": 4,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=8742"
   },
   {
@@ -207,7 +207,7 @@
    "area": "北海道",
    "lat": 42.353205,
    "lng": 141.01973,
-   "review": 3.9,
+   "review": 3.89,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=74543"
   },
   {
@@ -218,7 +218,7 @@
    "area": "北海道",
    "lat": 42.918819,
    "lng": 143.20455,
-   "review": 4.17,
+   "review": 4.16,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=147515"
   },
   {
@@ -229,7 +229,7 @@
    "area": "札幌市",
    "lat": 43.055686,
    "lng": 141.35636,
-   "review": 4.08,
+   "review": 4.07,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=140844"
   },
   {
@@ -251,7 +251,7 @@
    "area": "札幌市",
    "lat": 43.057585,
    "lng": 141.34714,
-   "review": 4.13,
+   "review": 4.14,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=16008"
   },
   {
@@ -273,7 +273,7 @@
    "area": "札幌市",
    "lat": 43.053369,
    "lng": 141.35793,
-   "review": 3.71,
+   "review": 3.75,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=11233"
   },
   {
@@ -284,7 +284,7 @@
    "area": "札幌市",
    "lat": 43.064488,
    "lng": 141.35333,
-   "review": 3.85,
+   "review": 3.84,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=147185"
   },
   {
@@ -295,7 +295,7 @@
    "area": "札幌市",
    "lat": 43.072759,
    "lng": 141.34997,
-   "review": 4.19,
+   "review": 4.2,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=934"
   },
   {
@@ -339,7 +339,7 @@
    "area": "千葉県",
    "lat": 35.60598,
    "lng": 140.11953,
-   "review": 4,
+   "review": 3.99,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=182195"
   },
   {
@@ -350,7 +350,7 @@
    "area": "千葉県",
    "lat": 35.729769,
    "lng": 140.07426,
-   "review": 4.06,
+   "review": 4.08,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=30805"
   },
   {
@@ -361,7 +361,7 @@
    "area": "千葉県",
    "lat": 35.614371,
    "lng": 140.11445,
-   "review": 4.28,
+   "review": 4.27,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=178671"
   },
   {
@@ -372,7 +372,7 @@
    "area": "千葉県",
    "lat": 35.706372,
    "lng": 139.95811,
-   "review": 4.11,
+   "review": 4.1,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=182688"
   },
   {
@@ -416,7 +416,7 @@
    "area": "埼玉県",
    "lat": 35.893219,
    "lng": 139.62979,
-   "review": 4.45,
+   "review": 4.44,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=198830"
   },
   {
@@ -427,7 +427,7 @@
    "area": "埼玉県",
    "lat": 35.971424,
    "lng": 139.5906,
-   "review": 3.68,
+   "review": 3.69,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=162804"
   },
   {
@@ -438,7 +438,7 @@
    "area": "埼玉県",
    "lat": 36.034903,
    "lng": 139.40202,
-   "review": 4.11,
+   "review": 4.12,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=177518"
   },
   {
@@ -449,7 +449,7 @@
    "area": "埼玉県",
    "lat": 35.998751,
    "lng": 139.08544,
-   "review": 3.71,
+   "review": 3.72,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=20479"
   },
   {
@@ -471,7 +471,7 @@
    "area": "埼玉県",
    "lat": 36.142399,
    "lng": 139.39086,
-   "review": 4.24,
+   "review": 4.23,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=198893"
   },
   {
@@ -482,7 +482,7 @@
    "area": "大分県",
    "lat": 33.27892,
    "lng": 131.49937,
-   "review": 4.22,
+   "review": 4.2,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=183506"
   },
   {
@@ -504,7 +504,7 @@
    "area": "大阪市",
    "lat": 34.673916,
    "lng": 135.49782,
-   "review": 4.02,
+   "review": 4.01,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=182512"
   },
   {
@@ -515,7 +515,7 @@
    "area": "大阪市",
    "lat": 34.655226,
    "lng": 135.49836,
-   "review": 4.31,
+   "review": 4.29,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=183296"
   },
   {
@@ -526,7 +526,7 @@
    "area": "大阪市",
    "lat": 34.655627,
    "lng": 135.50581,
-   "review": 4.16,
+   "review": 4.17,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=179017"
   },
   {
@@ -537,7 +537,7 @@
    "area": "大阪市",
    "lat": 34.669436,
    "lng": 135.49854,
-   "review": 4.15,
+   "review": 4.13,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=136119"
   },
   {
@@ -548,7 +548,7 @@
    "area": "大阪市",
    "lat": 34.672802,
    "lng": 135.50505,
-   "review": 4.14,
+   "review": 4.13,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=183561"
   },
   {
@@ -559,7 +559,7 @@
    "area": "大阪市",
    "lat": 34.669447,
    "lng": 135.49761,
-   "review": 4.25,
+   "review": 4.26,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=182511"
   },
   {
@@ -614,7 +614,7 @@
    "area": "大阪市",
    "lat": 34.69843,
    "lng": 135.48955,
-   "review": 3.9,
+   "review": 3.88,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=172704"
   },
   {
@@ -625,7 +625,7 @@
    "area": "大阪市",
    "lat": 34.692145,
    "lng": 135.49542,
-   "review": 4.13,
+   "review": 4.12,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=68244"
   },
   {
@@ -636,7 +636,7 @@
    "area": "大阪市",
    "lat": 34.681046,
    "lng": 135.51649,
-   "review": 4.2,
+   "review": 4.21,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=50188"
   },
   {
@@ -647,7 +647,7 @@
    "area": "大阪市",
    "lat": 34.683154,
    "lng": 135.51552,
-   "review": 4.32,
+   "review": 4.33,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=1023"
   },
   {
@@ -658,7 +658,7 @@
    "area": "大阪府",
    "lat": 34.738566,
    "lng": 135.58172,
-   "review": 4.25,
+   "review": 4.24,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=183341"
   },
   {
@@ -680,7 +680,7 @@
    "area": "大阪市",
    "lat": 34.683815,
    "lng": 135.49859,
-   "review": 3.92,
+   "review": 3.93,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=52162"
   },
   {
@@ -691,7 +691,7 @@
    "area": "大阪市",
    "lat": 34.685915,
    "lng": 135.50479,
-   "review": 4.13,
+   "review": 4.12,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=164557"
   },
   {
@@ -713,7 +713,7 @@
    "area": "大阪府",
    "lat": 34.757166,
    "lng": 135.49662,
-   "review": 4.18,
+   "review": 4.19,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=179719"
   },
   {
@@ -735,7 +735,7 @@
    "area": "大阪市",
    "lat": 34.730407,
    "lng": 135.49786,
-   "review": 4.13,
+   "review": 4.12,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=182440"
   },
   {
@@ -746,7 +746,7 @@
    "area": "大阪市",
    "lat": 34.730477,
    "lng": 135.49677,
-   "review": 3.98,
+   "review": 3.99,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=166135"
   },
   {
@@ -768,7 +768,7 @@
    "area": "大阪市",
    "lat": 34.689545,
    "lng": 135.50532,
-   "review": 4.29,
+   "review": 4.32,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=168427"
   },
   {
@@ -790,7 +790,7 @@
    "area": "大阪府",
    "lat": 34.461853,
    "lng": 135.37723,
-   "review": 3.91,
+   "review": 3.9,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=12668"
   },
   {
@@ -823,7 +823,7 @@
    "area": "大阪市",
    "lat": 34.682329,
    "lng": 135.49979,
-   "review": 4.28,
+   "review": 4.27,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=176594"
   },
   {
@@ -834,7 +834,7 @@
    "area": "奈良県",
    "lat": 34.682049,
    "lng": 135.82648,
-   "review": 4.29,
+   "review": 4.3,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=183057"
   },
   {
@@ -845,7 +845,7 @@
    "area": "仙台市",
    "lat": 38.26845,
    "lng": 140.86624,
-   "review": 3.94,
+   "review": 3.96,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=68125"
   },
   {
@@ -856,7 +856,7 @@
    "area": "仙台市",
    "lat": 38.255052,
    "lng": 140.88228,
-   "review": 4.3,
+   "review": 4.28,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=70226"
   },
   {
@@ -867,7 +867,7 @@
    "area": "宮城県",
    "lat": 38.571375,
    "lng": 140.96556,
-   "review": 4.13,
+   "review": 4.12,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=141069"
   },
   {
@@ -878,7 +878,7 @@
    "area": "仙台市",
    "lat": 38.262712,
    "lng": 140.88293,
-   "review": 4.27,
+   "review": 4.26,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=168213"
   },
   {
@@ -889,7 +889,7 @@
    "area": "宮崎県",
    "lat": 32.580545,
    "lng": 131.67017,
-   "review": 3.91,
+   "review": 3.92,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=158888"
   },
   {
@@ -900,7 +900,7 @@
    "area": "宮崎県",
    "lat": 32.58877,
    "lng": 131.67179,
-   "review": 3.94,
+   "review": 3.92,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=158887"
   },
   {
@@ -911,7 +911,7 @@
    "area": "宮崎県",
    "lat": 31.735614,
    "lng": 131.07422,
-   "review": 3.54,
+   "review": 3.53,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=11111"
   },
   {
@@ -955,7 +955,7 @@
    "area": "富山県",
    "lat": 36.636965,
    "lng": 136.9537,
-   "review": 4.06,
+   "review": 4.05,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=2126"
   },
   {
@@ -966,7 +966,7 @@
    "area": "富山県",
    "lat": 36.752218,
    "lng": 137.01991,
-   "review": 4.24,
+   "review": 4.23,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=38678"
   },
   {
@@ -988,7 +988,7 @@
    "area": "富山県",
    "lat": 36.827469,
    "lng": 137.40646,
-   "review": 4.11,
+   "review": 4.12,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=2127"
   },
   {
@@ -1010,7 +1010,7 @@
    "area": "山口県",
    "lat": 34.169385,
    "lng": 132.22347,
-   "review": 3.68,
+   "review": 3.66,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=199179"
   },
   {
@@ -1021,7 +1021,7 @@
    "area": "山口県",
    "lat": 34.057022,
    "lng": 131.56604,
-   "review": 4.17,
+   "review": 4.18,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=75378"
   },
   {
@@ -1032,7 +1032,7 @@
    "area": "山形県",
    "lat": 38.739029,
    "lng": 139.83536,
-   "review": 4.1,
+   "review": 4.08,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=158411"
   },
   {
@@ -1043,7 +1043,7 @@
    "area": "山梨県",
    "lat": 35.622177,
    "lng": 138.57185,
-   "review": 3.73,
+   "review": 3.74,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=19695"
   },
   {
@@ -1054,7 +1054,7 @@
    "area": "岐阜県",
    "lat": 35.366414,
    "lng": 136.61667,
-   "review": 4,
+   "review": 3.98,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=2119"
   },
   {
@@ -1065,7 +1065,7 @@
    "area": "岐阜県",
    "lat": 35.316688,
    "lng": 136.68543,
-   "review": 3.82,
+   "review": 3.83,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=162692"
   },
   {
@@ -1087,7 +1087,7 @@
    "area": "岡山県",
    "lat": 34.661395,
    "lng": 133.91553,
-   "review": 4.07,
+   "review": 4.08,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=109409"
   },
   {
@@ -1109,7 +1109,7 @@
    "area": "岩手県",
    "lat": 39.287837,
    "lng": 141.11903,
-   "review": 3.98,
+   "review": 3.99,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=69253"
   },
   {
@@ -1153,7 +1153,7 @@
    "area": "広島市",
    "lat": 34.399881,
    "lng": 132.47401,
-   "review": 4.15,
+   "review": 4.16,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=191892"
   },
   {
@@ -1219,7 +1219,7 @@
    "area": "名古屋市",
    "lat": 35.167591,
    "lng": 136.91237,
-   "review": 4.16,
+   "review": 4.15,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=128576"
   },
   {
@@ -1230,7 +1230,7 @@
    "area": "名古屋市",
    "lat": 35.175076,
    "lng": 136.90647,
-   "review": 4.23,
+   "review": 4.24,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=167504"
   },
   {
@@ -1241,7 +1241,7 @@
    "area": "名古屋市",
    "lat": 35.167563,
    "lng": 136.91332,
-   "review": 4.07,
+   "review": 4.09,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=161261"
   },
   {
@@ -1252,7 +1252,7 @@
    "area": "名古屋市",
    "lat": 35.171207,
    "lng": 136.90685,
-   "review": 4.28,
+   "review": 4.26,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=17704"
   },
   {
@@ -1296,7 +1296,7 @@
    "area": "愛知県",
    "lat": 35.303674,
    "lng": 136.7992,
-   "review": 3.77,
+   "review": 3.72,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=8952"
   },
   {
@@ -1318,7 +1318,7 @@
    "area": "新潟県",
    "lat": 37.082915,
    "lng": 138.24807,
-   "review": 4.21,
+   "review": 4.22,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=166084"
   },
   {
@@ -1362,7 +1362,7 @@
    "area": "新潟県",
    "lat": 36.902106,
    "lng": 138.25171,
-   "review": 4.09,
+   "review": 4.07,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=11307"
   },
   {
@@ -1384,7 +1384,7 @@
    "area": "東京23区",
    "lat": 35.648403,
    "lng": 139.75015,
-   "review": 4.2,
+   "review": 4.19,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=138037"
   },
   {
@@ -1395,7 +1395,7 @@
    "area": "東京23区",
    "lat": 35.704692,
    "lng": 139.77392,
-   "review": 4.32,
+   "review": 4.34,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=188775"
   },
   {
@@ -1450,7 +1450,7 @@
    "area": "東京23区",
    "lat": 35.70918,
    "lng": 139.77614,
-   "review": 4.16,
+   "review": 4.17,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=184099"
   },
   {
@@ -1472,7 +1472,7 @@
    "area": "東京23区",
    "lat": 35.560812,
    "lng": 139.72199,
-   "review": 4.2,
+   "review": 4.19,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=182180"
   },
   {
@@ -1483,7 +1483,7 @@
    "area": "東京23区",
    "lat": 35.711458,
    "lng": 139.77302,
-   "review": 3.97,
+   "review": 3.92,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=151189"
   },
   {
@@ -1494,7 +1494,7 @@
    "area": "東京23区",
    "lat": 35.708675,
    "lng": 139.77293,
-   "review": 4.38,
+   "review": 4.36,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=199360"
   },
   {
@@ -1516,7 +1516,7 @@
    "area": "東京23区",
    "lat": 35.688113,
    "lng": 139.78408,
-   "review": 4.38,
+   "review": 4.34,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=178644"
   },
   {
@@ -1527,7 +1527,7 @@
    "area": "東京23区",
    "lat": 35.671631,
    "lng": 139.77521,
-   "review": 4.26,
+   "review": 4.25,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=166354"
   },
   {
@@ -1538,7 +1538,7 @@
    "area": "東京23区",
    "lat": 35.675639,
    "lng": 139.77818,
-   "review": 4.27,
+   "review": 4.26,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=188020"
   },
   {
@@ -1560,7 +1560,7 @@
    "area": "東京都(23区外)",
    "lat": 35.656934,
    "lng": 139.33379,
-   "review": 3.57,
+   "review": 3.58,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=179044"
   },
   {
@@ -1571,7 +1571,7 @@
    "area": "東京都(23区外)",
    "lat": 35.6567,
    "lng": 139.33042,
-   "review": 3.83,
+   "review": 3.8,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=168607"
   },
   {
@@ -1582,7 +1582,7 @@
    "area": "東京23区",
    "lat": 35.66232,
    "lng": 139.7323,
-   "review": 4.1,
+   "review": 4.09,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=149399"
   },
   {
@@ -1593,7 +1593,7 @@
    "area": "東京23区",
    "lat": 35.666145,
    "lng": 139.73743,
-   "review": 4.2,
+   "review": 4.19,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=180334"
   },
   {
@@ -1604,7 +1604,7 @@
    "area": "東京23区",
    "lat": 35.615284,
    "lng": 139.71729,
-   "review": 4.17,
+   "review": 4.19,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=181695"
   },
   {
@@ -1648,7 +1648,7 @@
    "area": "東京23区",
    "lat": 35.691121,
    "lng": 139.78056,
-   "review": 3.96,
+   "review": 3.97,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=135970"
   },
   {
@@ -1659,7 +1659,7 @@
    "area": "東京23区",
    "lat": 35.731474,
    "lng": 139.72635,
-   "review": 4.33,
+   "review": 4.34,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=176596"
   },
   {
@@ -1670,7 +1670,7 @@
    "area": "東京23区",
    "lat": 35.73461,
    "lng": 139.73778,
-   "review": 4.32,
+   "review": 4.31,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=151428"
   },
   {
@@ -1681,7 +1681,7 @@
    "area": "東京23区",
    "lat": 35.703142,
    "lng": 139.7672,
-   "review": 4.09,
+   "review": 4.08,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=153602"
   },
   {
@@ -1692,7 +1692,7 @@
    "area": "東京23区",
    "lat": 35.695933,
    "lng": 139.70122,
-   "review": 4.14,
+   "review": 4.16,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=149094"
   },
   {
@@ -1703,7 +1703,7 @@
    "area": "東京23区",
    "lat": 35.695833,
    "lng": 139.70282,
-   "review": 4.23,
+   "review": 4.24,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=172880"
   },
   {
@@ -1725,7 +1725,7 @@
    "area": "東京23区",
    "lat": 35.661379,
    "lng": 139.75532,
-   "review": 4.2,
+   "review": 4.21,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=129907"
   },
   {
@@ -1736,7 +1736,7 @@
    "area": "東京23区",
    "lat": 35.666893,
    "lng": 139.75331,
-   "review": 4.28,
+   "review": 4.27,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=145305"
   },
   {
@@ -1747,7 +1747,7 @@
    "area": "東京23区",
    "lat": 35.692504,
    "lng": 139.7832,
-   "review": 4.25,
+   "review": 4.26,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=179996"
   },
   {
@@ -1769,7 +1769,7 @@
    "area": "東京23区",
    "lat": 35.686358,
    "lng": 139.79157,
-   "review": 4,
+   "review": 4.01,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=109470"
   },
   {
@@ -1791,7 +1791,7 @@
    "area": "東京23区",
    "lat": 35.698214,
    "lng": 139.7495,
-   "review": 4.2,
+   "review": 4.19,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=135913"
   },
   {
@@ -1802,7 +1802,7 @@
    "area": "東京23区",
    "lat": 35.689052,
    "lng": 139.82113,
-   "review": 4.26,
+   "review": 4.25,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=5071"
   },
   {
@@ -1835,7 +1835,7 @@
    "area": "東京23区",
    "lat": 35.697933,
    "lng": 139.70461,
-   "review": 4.24,
+   "review": 4.23,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=147545"
   },
   {
@@ -1857,7 +1857,7 @@
    "area": "東京23区",
    "lat": 35.698022,
    "lng": 139.70511,
-   "review": 4.25,
+   "review": 4.26,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=160689"
   },
   {
@@ -1868,7 +1868,7 @@
    "area": "東京23区",
    "lat": 35.698311,
    "lng": 139.70727,
-   "review": 4.08,
+   "review": 4.07,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=138038"
   },
   {
@@ -1901,7 +1901,7 @@
    "area": "東京23区",
    "lat": 35.682899,
    "lng": 139.74001,
-   "review": 4.2,
+   "review": 4.22,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=145463"
   },
   {
@@ -1912,7 +1912,7 @@
    "area": "東京23区",
    "lat": 35.73376,
    "lng": 139.71137,
-   "review": 4.25,
+   "review": 4.27,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=129459"
   },
   {
@@ -1934,7 +1934,7 @@
    "area": "東京23区",
    "lat": 35.710425,
    "lng": 139.79005,
-   "review": 4.26,
+   "review": 4.27,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=162808"
   },
   {
@@ -1956,7 +1956,7 @@
    "area": "東京23区",
    "lat": 35.70622,
    "lng": 139.79454,
-   "review": 4.41,
+   "review": 4.4,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=184763"
   },
   {
@@ -1967,7 +1967,7 @@
    "area": "東京23区",
    "lat": 35.70262,
    "lng": 139.79058,
-   "review": 4.24,
+   "review": 4.22,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=184277"
   },
   {
@@ -1978,7 +1978,7 @@
    "area": "東京23区",
    "lat": 35.710058,
    "lng": 139.79523,
-   "review": 4.33,
+   "review": 4.32,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=164549"
   },
   {
@@ -2000,7 +2000,7 @@
    "area": "東京23区",
    "lat": 35.698068,
    "lng": 139.78498,
-   "review": 4.31,
+   "review": 4.29,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=184278"
   },
   {
@@ -2011,7 +2011,7 @@
    "area": "東京23区",
    "lat": 35.700126,
    "lng": 139.7878,
-   "review": 4.11,
+   "review": 4.12,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=147970"
   },
   {
@@ -2033,7 +2033,7 @@
    "area": "東京23区",
    "lat": 35.65622,
    "lng": 139.69502,
-   "review": 4.18,
+   "review": 4.19,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=138039"
   },
   {
@@ -2055,7 +2055,7 @@
    "area": "東京都(23区外)",
    "lat": 35.542134,
    "lng": 139.45058,
-   "review": 4.16,
+   "review": 4.15,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=153151"
   },
   {
@@ -2077,7 +2077,7 @@
    "area": "東京23区",
    "lat": 35.69384,
    "lng": 139.77238,
-   "review": 4.39,
+   "review": 4.37,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=165193"
   },
   {
@@ -2088,7 +2088,7 @@
    "area": "東京23区",
    "lat": 35.692121,
    "lng": 139.77515,
-   "review": 4.1,
+   "review": 4.11,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=136820"
   },
   {
@@ -2143,7 +2143,7 @@
    "area": "東京23区",
    "lat": 35.700695,
    "lng": 139.77066,
-   "review": 3.93,
+   "review": 3.92,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=162836"
   },
   {
@@ -2154,7 +2154,7 @@
    "area": "東京23区",
    "lat": 35.666065,
    "lng": 139.77502,
-   "review": 4.24,
+   "review": 4.25,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=129539"
   },
   {
@@ -2165,7 +2165,7 @@
    "area": "東京23区",
    "lat": 35.763203,
    "lng": 139.8263,
-   "review": 4.27,
+   "review": 4.26,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=173227"
   },
   {
@@ -2198,7 +2198,7 @@
    "area": "東京23区",
    "lat": 35.562531,
    "lng": 139.71307,
-   "review": 4.26,
+   "review": 4.27,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=183700"
   },
   {
@@ -2209,7 +2209,7 @@
    "area": "東京23区",
    "lat": 35.56125,
    "lng": 139.71942,
-   "review": 4.03,
+   "review": 4.05,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=158707"
   },
   {
@@ -2220,7 +2220,7 @@
    "area": "東京23区",
    "lat": 35.656976,
    "lng": 139.72368,
-   "review": 4.03,
+   "review": 4.04,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=8591"
   },
   {
@@ -2253,7 +2253,7 @@
    "area": "東京23区",
    "lat": 35.673178,
    "lng": 139.77435,
-   "review": 4.19,
+   "review": 4.18,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=158365"
   },
   {
@@ -2297,7 +2297,7 @@
    "area": "東京23区",
    "lat": 35.700308,
    "lng": 139.74824,
-   "review": 4.16,
+   "review": 4.15,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=164802"
   },
   {
@@ -2319,7 +2319,7 @@
    "area": "東京23区",
    "lat": 35.727178,
    "lng": 139.77275,
-   "review": 4,
+   "review": 3.99,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=158522"
   },
   {
@@ -2352,7 +2352,7 @@
    "area": "東京23区",
    "lat": 35.697348,
    "lng": 139.79438,
-   "review": 4.27,
+   "review": 4.28,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=176595"
   },
   {
@@ -2363,7 +2363,7 @@
    "area": "東京23区",
    "lat": 35.661601,
    "lng": 139.73767,
-   "review": 4.37,
+   "review": 4.36,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=184462"
   },
   {
@@ -2396,7 +2396,7 @@
    "area": "東京23区",
    "lat": 35.671606,
    "lng": 139.77384,
-   "review": 4.16,
+   "review": 4.15,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=142746"
   },
   {
@@ -2451,7 +2451,7 @@
    "area": "沖縄県",
    "lat": 26.218251,
    "lng": 127.68061,
-   "review": 3.97,
+   "review": 3.98,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=67292"
   },
   {
@@ -2495,7 +2495,7 @@
    "area": "熊本県",
    "lat": 32.797041,
    "lng": 130.70356,
-   "review": 4.09,
+   "review": 4.08,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=79363"
   },
   {
@@ -2506,7 +2506,7 @@
    "area": "石川県",
    "lat": 36.300826,
    "lng": 136.31442,
-   "review": 4.25,
+   "review": 4.26,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=2124"
   },
   {
@@ -2517,7 +2517,7 @@
    "area": "石川県",
    "lat": 36.399768,
    "lng": 136.45,
-   "review": 4.07,
+   "review": 4.03,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=2123"
   },
   {
@@ -2539,7 +2539,7 @@
    "area": "石川県",
    "lat": 36.560054,
    "lng": 136.65288,
-   "review": 4.17,
+   "review": 4.15,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=18391"
   },
   {
@@ -2550,7 +2550,7 @@
    "area": "石川県",
    "lat": 36.557529,
    "lng": 136.6543,
-   "review": 4.06,
+   "review": 4.05,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=2120"
   },
   {
@@ -2561,7 +2561,7 @@
    "area": "石川県",
    "lat": 36.571396,
    "lng": 136.60614,
-   "review": 4.33,
+   "review": 4.32,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=2122"
   },
   {
@@ -2572,7 +2572,7 @@
    "area": "石川県",
    "lat": 36.554388,
    "lng": 136.64684,
-   "review": 3.93,
+   "review": 3.92,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=2121"
   },
   {
@@ -2583,7 +2583,7 @@
    "area": "石川県",
    "lat": 36.577716,
    "lng": 136.64674,
-   "review": 4.08,
+   "review": 4.09,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=547"
   },
   {
@@ -2605,7 +2605,7 @@
    "area": "神奈川県",
    "lat": 35.394178,
    "lng": 139.31534,
-   "review": 4.05,
+   "review": 4.07,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=5635"
   },
   {
@@ -2638,7 +2638,7 @@
    "area": "神奈川県",
    "lat": 35.553727,
    "lng": 139.41978,
-   "review": 3.97,
+   "review": 3.99,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=165986"
   },
   {
@@ -2649,7 +2649,7 @@
    "area": "神奈川県",
    "lat": 35.596898,
    "lng": 139.34585,
-   "review": 3.97,
+   "review": 3.95,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=143287"
   },
   {
@@ -2660,7 +2660,7 @@
    "area": "神奈川県",
    "lat": 35.594096,
    "lng": 139.34774,
-   "review": 4.1,
+   "review": 4.12,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=171895"
   },
   {
@@ -2682,7 +2682,7 @@
    "area": "横浜市",
    "lat": 35.451714,
    "lng": 139.63842,
-   "review": 4.38,
+   "review": 4.39,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=171996"
   },
   {
@@ -2715,7 +2715,7 @@
    "area": "福岡市",
    "lat": 33.589502,
    "lng": 130.43087,
-   "review": 4.14,
+   "review": 4.15,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=178702"
   },
   {
@@ -2726,7 +2726,7 @@
    "area": "福岡市",
    "lat": 33.593318,
    "lng": 130.41489,
-   "review": 4.13,
+   "review": 4.12,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=183275"
   },
   {
@@ -2737,7 +2737,7 @@
    "area": "福岡市",
    "lat": 33.591529,
    "lng": 130.41581,
-   "review": 3.99,
+   "review": 3.98,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=183042"
   },
   {
@@ -2748,7 +2748,7 @@
    "area": "福岡市",
    "lat": 33.586982,
    "lng": 130.41478,
-   "review": 4.04,
+   "review": 4.03,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=183058"
   },
   {
@@ -2759,7 +2759,7 @@
    "area": "福岡市",
    "lat": 33.58636,
    "lng": 130.41799,
-   "review": 3.82,
+   "review": 3.83,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=56325"
   },
   {
@@ -2781,7 +2781,7 @@
    "area": "北九州市",
    "lat": 33.887381,
    "lng": 130.88557,
-   "review": 3.94,
+   "review": 3.96,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=145433"
   },
   {
@@ -2792,7 +2792,7 @@
    "area": "福岡市",
    "lat": 33.589002,
    "lng": 130.40451,
-   "review": 3.8,
+   "review": 3.86,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=202100"
   },
   {
@@ -2814,7 +2814,7 @@
    "area": "福岡市",
    "lat": 33.582183,
    "lng": 130.40813,
-   "review": 4.04,
+   "review": 4.03,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=182"
   },
   {
@@ -2825,7 +2825,7 @@
    "area": "福岡県",
    "lat": 33.72653,
    "lng": 130.97222,
-   "review": 4.07,
+   "review": 4.08,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=191652"
   },
   {
@@ -2836,7 +2836,7 @@
    "area": "福岡市",
    "lat": 33.590499,
    "lng": 130.42473,
-   "review": 4.12,
+   "review": 4.13,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=182017"
   },
   {
@@ -2847,7 +2847,7 @@
    "area": "福島県",
    "lat": 37.753596,
    "lng": 140.45781,
-   "review": 4.31,
+   "review": 4.3,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=160664"
   },
   {
@@ -2858,7 +2858,7 @@
    "area": "福島県",
    "lat": 37.75084,
    "lng": 140.46446,
-   "review": 3.87,
+   "review": 3.88,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=14047"
   },
   {
@@ -2880,7 +2880,7 @@
    "area": "秋田県",
    "lat": 39.720532,
    "lng": 140.11924,
-   "review": 4.08,
+   "review": 4.09,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=141906"
   },
   {
@@ -2902,7 +2902,7 @@
    "area": "群馬県",
    "lat": 36.389548,
    "lng": 139.07353,
-   "review": 4.07,
+   "review": 4.08,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=9645"
   },
   {
@@ -2913,7 +2913,7 @@
    "area": "群馬県",
    "lat": 36.295577,
    "lng": 139.37188,
-   "review": 4.06,
+   "review": 4.04,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=197750"
   },
   {
@@ -2968,7 +2968,7 @@
    "area": "茨城県",
    "lat": 36.368325,
    "lng": 140.47654,
-   "review": 3.88,
+   "review": 3.87,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=151370"
   },
   {
@@ -2979,7 +2979,7 @@
    "area": "茨城県",
    "lat": 36.375854,
    "lng": 140.47258,
-   "review": 3.89,
+   "review": 3.88,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=2736"
   },
   {
@@ -3012,7 +3012,7 @@
    "area": "長崎県",
    "lat": 32.753529,
    "lng": 129.87147,
-   "review": 3.91,
+   "review": 3.9,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=70894"
   },
   {
@@ -3023,7 +3023,7 @@
    "area": "長崎県",
    "lat": 32.74726,
    "lng": 129.87167,
-   "review": 4.1,
+   "review": 4.11,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=70850"
   },
   {
@@ -3034,7 +3034,7 @@
    "area": "長野県",
    "lat": 36.343059,
    "lng": 138.63851,
-   "review": 3.95,
+   "review": 3.97,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=109519"
   },
   {
@@ -3111,7 +3111,7 @@
    "area": "青森県",
    "lat": 40.82793,
    "lng": 140.739,
-   "review": 3.96,
+   "review": 3.95,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=146141"
   },
   {
@@ -3122,7 +3122,7 @@
    "area": "青森県",
    "lat": 40.827413,
    "lng": 140.74152,
-   "review": 3.98,
+   "review": 3.96,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=149278"
   },
   {
@@ -3155,7 +3155,7 @@
    "area": "香川県",
    "lat": 34.288186,
    "lng": 133.79506,
-   "review": 3.97,
+   "review": 3.98,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=80598"
   },
   {
@@ -3177,7 +3177,7 @@
    "area": "香川県",
    "lat": 34.226763,
    "lng": 134.01318,
-   "review": 4.13,
+   "review": 4.14,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=80464"
   },
   {
@@ -3199,7 +3199,7 @@
    "area": "鳥取県",
    "lat": 35.492981,
    "lng": 134.2274,
-   "review": 4.18,
+   "review": 4.19,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=196888"
   },
   {
@@ -3210,7 +3210,7 @@
    "area": "鳥取県",
    "lat": 35.492045,
    "lng": 134.22678,
-   "review": 4.13,
+   "review": 4.17,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=70830"
   },
   {
@@ -3254,7 +3254,7 @@
    "area": "鹿児島県",
    "lat": 31.588929,
    "lng": 130.55656,
-   "review": 4.2,
+   "review": 4.18,
    "url": "https://img.travel.rakuten.co.jp/image/tr/api/kw/JBe8h/?f_no=16616"
   }
  ]
